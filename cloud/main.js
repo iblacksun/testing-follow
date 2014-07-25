@@ -4,7 +4,7 @@ AV.Cloud.define("hello", function(request, response) {
   response.success("Hello world!");
 });
 
-AV.Clound.define("followEachOther",function(request, response){
+AV.Cloud.define("followEachOther",function(request, response){
 	var userId1 = request.params.userId1;
 	var userId2 = request.params.userId2;
 	var query1 = new AV.Query(AV.User);
