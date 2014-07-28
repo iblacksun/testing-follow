@@ -19,13 +19,13 @@ AV.Cloud.define("followEachOther",function(request, response){
 						  success: function(object) {
 							  response.success("follow success");
 						  },
-						  error: function(object, error) {
-						  	  response.error("follow user failed");
+						  error: function(error) {
+						  	  response.error(error);
 						  }
 					  });
 				  },
-				  error: function(object, error) {
-				  	  response.error("follow user failed");
+				  error: function(error) {
+				  	  response.error(error);
 				  }
 			  });
 	  	  },
